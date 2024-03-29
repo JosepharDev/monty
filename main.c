@@ -38,13 +38,3 @@ int	main(int ac, char **av)
 	return (0);
 }
 
-
-
-// If the file contains an invalid instruction : "L<line_number>: unknown instruction <opcode>\n" (exit 1)
-//     - where is the line number where the instruction appears.
-//     - Line numbers always start at 1
-// The monty program runs the bytecodes line by line and stop if either:
-//     - it executed properly every line of the file
-//     - it finds an error in the file
-//     - an error occured
-// If you can’t malloc anymore, print the error message Error: malloc failed, followed by a new line, and exit with status EXIT_FAILURE.

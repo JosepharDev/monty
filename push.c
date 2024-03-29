@@ -42,3 +42,4 @@ void    push(stack_t **head, unsigned int line_content)
 	else
 		add_queue(head, number); 
 }
+

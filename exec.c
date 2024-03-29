@@ -4,20 +4,10 @@ void exec(char *content, stack_t **stack, unsigned int line_cntnt, FILE *file)
 {
 	instruction_t instruct[] = {
 		{"push", push}, {"pall", pall}, {"pint", pint},
-		{"pop", pop},
-		{"swap", swap},
-		{"add", add},
-		{"nop", nop},
-		{"sub", sub},
-		{"div", div},
-		{"mul", mul},
-		{"mod", mod},
-		{"pchar", pchar},
-		{"pstr", pstr},
-		{"rotl", rotl},
-		{"rotr", rotr},
-		{"queue", queue},
-		{"stack", stack},
+		{"pop", pop}, {"swap", swap}, {"add", add}, {"nop", nop},
+		{"sub", sub}, {"div", div}, {"mul", mul}, {"mod", mod}, {"pchar", pchar},
+		{"pstr", pstr}, {"rotl", rotl}, {"rotr", rotr},
+		{"queue", queue}, {"stack", stack},
 		{NULL, NULL}
 		};
 	size_t  i = 0;

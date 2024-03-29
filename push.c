@@ -23,7 +23,7 @@ void    push(stack_t **head, unsigned int line_content)
 		{
 			fprintf(stderr, "L%d: usage: push integer\n", line_content);
 			fclose(utils.fd);
-			free(utils.instruct);
+			free(utils.content);
 			free_struct(*head);
 			exit(1);
 		}
@@ -33,7 +33,7 @@ void    push(stack_t **head, unsigned int line_content)
 		fprintf(stderr, "L%d: usage: push integer\n", line_content);
 		fclose(utils.fd);
 		free(utils.content);
-		free_stack(*head);
+		free_struct(*head);
 		exit(EXIT_FAILURE);
 	}
 	number = atoi(utils.instruct);

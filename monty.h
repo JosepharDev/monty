@@ -57,6 +57,7 @@ typedef struct utils_s
 } utils_t;
 extern utils_t utils;
 
+ssize_t	getline(char **lineptr, size_t *n, FILE *stream);
 void	exec(char *content, stack_t **stack, unsigned int line_cntnt, FILE *file);
 void    pall(stack_t **head, unsigned int line_content);
 void    pint(stack_t **head, unsigned int line_content);
@@ -66,7 +67,7 @@ void    swap(stack_t **head, unsigned int line_content);
 void    add_node(stack_t **head, int number);
 void    add_queue(stack_t **head, int number);
 void    free_struct(stack_t *head);
-void	add(stack_t **head, unsigned int line_content)
+void	add(stack_t **head, unsigned int line_content);
 
 
 #endif

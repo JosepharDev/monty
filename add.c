@@ -22,7 +22,7 @@ void add(stack_t **head, unsigned int line_content)
 		fprintf(stderr, "L%d: can't add, stack too short\n", line_content);
 		fclose(utils.fd);
 		free(utils.content);
-		free_stack(*head);
+		free_struct(*head);
 		exit(EXIT_FAILURE);
 	}
 	head2 = *head;

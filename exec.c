@@ -1,5 +1,14 @@
 #include "monty.h"
 
+/**
+* exec - executes the opcode
+* @stack: head linked list - stack
+* @line_cntnt: line_content
+* @file: poiner to monty file
+* @content: line content
+* Return: no return
+*/
+
 void exec(char *content, stack_t **stack, unsigned int line_cntnt, FILE *file)
 {
 	instruction_t instruct[] = {

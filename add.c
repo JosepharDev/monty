@@ -5,6 +5,7 @@
  * @line_content: line_number
  * Return: no return
 */
+
 void add(stack_t **head, unsigned int line_content)
 {
 	stack_t *head2;

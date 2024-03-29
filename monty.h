@@ -39,6 +39,14 @@ typedef struct instruction_s
 	void	(*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/**
+ * struct utils_s - variables -instruct, fd, content
+ * @instruct: value
+ * @fd: pointer to monty file
+ * @content: line content
+ * @lifi: flag change stack <-> queue
+ * Description: carries values through the program
+ */
 
 typedef struct utils_s
 {
@@ -58,7 +66,7 @@ void    swap(stack_t **head, unsigned int line_content);
 void    add_node(stack_t **head, int number);
 void    add_queue(stack_t **head, int number);
 void    free_struct(stack_t *head);
-voidadd(stack_t **head, unsigned int line_content)
+void	add(stack_t **head, unsigned int line_content)
 
 
 #endif

@@ -8,7 +8,7 @@ int	main(int ac, char **av)
 	int read = 1;
 	char    *buffer = NULL;
 
-	if (ac = 2)
+	if (ac == 2)
 	{
 		utils.fd = fopen(av[1], 'r');
 		if (!utils.fd)

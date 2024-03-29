@@ -40,6 +40,6 @@ void    push(stack_t **head, unsigned int line_content)
 	if (utils.lifi == 0)
 		add_node(head, number);
 	else
-		add_queue(head, number); 
+		add_queue(head, number);
 }
 

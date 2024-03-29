@@ -39,4 +39,26 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+
+typedef struct utils_s
+{
+        FILE *fd;
+        char *content;
+        int lifi;
+        char *instruct;
+}utils_t;
+extern utils_t utils;
+
+void    exec(char *content, stack_t **stack, unsigned int line_content, FILE *file);
+void    pall(stack_t **head, unsigned int line_content);
+void    pint(stack_t **head, unsigned int line_content);
+void    pop(stack_t **head, unsigned int line_content);
+void    push(stack_t **head, unsigned int line_content);
+void    swap(stack_t **head, unsigned int line_content);
+void    add_node(stack_t **head, int number);
+void    add_queue(stack_t **head, int number);
+void    free_struct(stack_t *head);
+void    add(stack_t **head, unsigned int line_content)
+
+
 #endif

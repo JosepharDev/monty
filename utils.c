@@ -15,9 +15,9 @@ void add_node(stack_t **head, int number)
 	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
 	{
-        printf("Error\n");
+		printf("Error\n");
 		exit(0);
-    }
+	}
 	if (tmp)
 		tmp->prev = new_node;
 	new_node->n = number;
@@ -37,7 +37,7 @@ void add_queue(stack_t **head, int number)
 {
 	stack_t *new_node, *tmp;
 
-	tmp= *head;
+	tmp = *head;
 	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
 	{

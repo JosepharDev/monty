@@ -8,12 +8,12 @@
 */
 void    push(stack_t **head, unsigned int line_content)
 {
-	int number = 0, j = 0, flag = 0;
+	int number, j = 0, flag = 0;
 
 	if (utils.instruct)
 	{
 		if (utils.instruct[0] == '-')
-			j--;
+			j++;
 		for (; utils.instruct[j] != '\0'; j++)
 		{
 			if (utils.instruct[j] > 57 || utils.instruct[j] < 48)

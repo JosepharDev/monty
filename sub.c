@@ -27,3 +27,4 @@ void sub(stack_t **head, unsigned int counter)
 	*head = tmp->next;
 	free(tmp);
 }
+

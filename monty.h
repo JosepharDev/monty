@@ -70,10 +70,11 @@ void    free_struct(stack_t *head);
 void	add(stack_t **head, unsigned int line_content);
 void	nop(stack_t **head, unsigned int counter);
 void	sub(stack_t **head, unsigned int counter);
-void	div(stack_t **head, unsigned int counter);
+void	ft_div(stack_t **head, unsigned int counter);
 void	mul(stack_t **head, unsigned int counter);
 void	mod(stack_t **head, unsigned int counter);
 void	pchar(stack_t **head, unsigned int counter);
 void	pstr(stack_t **head, unsigned int counter);
 
 #endif
+

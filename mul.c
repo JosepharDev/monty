@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * swap - adds the top two elements of the stack.
+ * mul - multiplies the top two elements of the stack.
  * @head: stack head
- * @line_content: line_number
+ * @counter: line_number
  * Return: no return
 */
-void swap(stack_t **head, unsigned int line_content)
+void mul(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
 	int len = 0, tmp;
@@ -18,14 +18,15 @@ void swap(stack_t **head, unsigned int line_content)
 	}
 	if (len < 2)
 	{
-		fprintf(stderr, "L%d: can't swap, stack too short\n", line_content);
+		fprintf(stderr, "L%d: can't mul, stack too short\n", counter);
 		fclose(utils.fd);
 		free(utils.content);
 		free_struct(*head);
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
-	tmp = h->n;
-	h->n = h->next->n;
+	tmp = h->next->n * h->n;
 	h->next->n = tmp;
+	*head = h->next;
+	free(h);
 }

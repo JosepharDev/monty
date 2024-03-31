@@ -16,8 +16,8 @@ void exec(char *content, stack_t **stack, unsigned int line_cntnt, FILE *file)
 		{"pop", pop}, {"swap", swap}, {"add", add},
 		{"nop", nop}, {"sub", sub}, {"div", ft_div},
 		{"mul", mul}, {"mod", mod}, {"pchar", pchar},
-		{"pstr", pstr},
-		{NULL, NULL}
+		{"pstr", pstr}, {"rotl", rotl}, {"rotr", rotr},
+		{"stack", ft_stack}, {"queue", ft_queue}, {NULL, NULL}
 		};
 	size_t  i = 0;
 	char    *tmp;

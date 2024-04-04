@@ -34,7 +34,7 @@ int	main(int ac, char **av)
 			{
 				exec(buffer, &stack, line_content, file);
 			}
-			/*free(buffer);*/
+			free(buffer);
 		}
 		free_struct(stack);
 		fclose(file);

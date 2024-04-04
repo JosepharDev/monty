@@ -36,12 +36,12 @@ int	main(int ac, char **av)
 			}
 			/*free(buffer);*/
 		}
-		/*free_struct(stack);*/
+		free_struct(stack);
 		fclose(file);
 	}
 	else
 	{
-		write(2, "USAGE: monty file\n", 19);
+		write(2, "USAGE: monty file\n", 18);
 		exit(1);
 	}
 	return (0);

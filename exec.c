@@ -39,7 +39,7 @@ void exec(char *content, stack_t **stack, unsigned int line_cntnt, FILE *file)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", line_cntnt, tmp);
 		fclose(file);
-		/*free(content);*/
+		free(content);
 		free_struct(*stack);
 		exit(EXIT_FAILURE);
 	}
